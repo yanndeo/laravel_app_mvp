@@ -16,6 +16,12 @@ You can install this from docker using sail or directly on your local web server
 - you need define also your smtp parameters : follow just the example smtp config in .env.example
 - run following command : php artisan queue:work --tries=3
 
+## How access to dashboard
+- check routes folder , in file web.php or run command : php artisan route:list
+- access to admin dashbord (build with laravel-admin) :  Ex: http://localhost/admin
+- you will be redirect to login form. Use this : admin/admin
+- once on dashboard you can manipulate all resources defines in this, as : Contact from menu contact.
+
 
 
 ## About Laravel
