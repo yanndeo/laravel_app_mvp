@@ -11,16 +11,28 @@
 ## How Install 
 You can install this from docker using sail or directly on your local web server (mamp, wamp, .. laragon).
 - rename .env.example file to .env and define your database parameters
-- create your database and run migration : php artisan make:migration
+- create your database and run migration : php artisan make:migration 
 - check all migration with command : php artisan migrate:status
+- run command  : npm run de or npm run watch to compile assets
 - you need define also your smtp parameters : follow just the example smtp config in .env.example
 - run following command : php artisan queue:work --tries=3
+- NB : you can populate your database using factories
 
 ## How access to dashboard
 - check routes folder , in file web.php or run command : php artisan route:list
 - access to admin dashbord (build with laravel-admin) :  Ex: http://localhost/admin
 - you will be redirect to login form. Use this : admin/admin
 - once on dashboard you can manipulate all resources defines in this, as : Contact from menu contact.
+
+## features
+- Bootstrap's integration
+- responsive form
+- form validation 
+- Model CRUD : Contact
+- sending email
+- event/listener 
+- Queues.
+
 
 
 
