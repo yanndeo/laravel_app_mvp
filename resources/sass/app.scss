@@ -1,0 +1,146 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    background-color: transparent
+}
+
+[hidden] {
+    display: none
+}
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    line-height: 1.5
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+    border: 0 solid #e2e8f0
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit
+}
+
+$purple-color:#8A2BE2;
+
+$secondary-color : #99b19c;
+
+a {
+    i {
+        color: $secondary-color;
+
+        .bi-trash-fill {
+            color: red;
+        }
+    }
+}
+
+.btn-purple {
+    background-color: $purple-color;
+    color: #fff;
+    font-weight: 800;
+
+    &:hover {
+        background-color: transparent;
+        border: 1px solid $purple-color;
+        font-style: 700;
+    }
+}
+
+.alert-purple {
+    background-color: rgb(236, 225, 247);
+}
+
+.box {
+    width: 88%;
+    height: r(430px);
+    background: #FFF;
+    margin: r(40px) auto;
+}
+
+.effect1 {
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+.border-radius-none {
+    border-radius: 0 !important;
+}
+
+.colx {
+    border: 1px solid rgb(212, 188, 235);
+    padding: 4px 0;
+}
+
+textarea {
+    border: 1px solid rgb(212, 188, 235) !important;
+
+    &:focus {
+        border: none !important;
+        outline: none;
+    }
+}
+
+label {
+    font-size: r(19px);
+    text-transform: uppercase;
+    color: gray;
+}
+
+input {
+    padding: 6px;
+    border: none !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none !important;
+
+    &:focus {
+        outline: none !important;
+        outline-width: 0 !important;
+        box-shadow: 0 0 0 rgb(255, 255, 255);
+    }
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+table {
+    border: 1px solid $purple-color;
+}
+
+.thead {
+    height: 10px;
+    background: $purple-color;
+    color: #fff;
+    text-transform: uppercase;
+
+    tt th {
+        height: 40px;
+    }
+}
