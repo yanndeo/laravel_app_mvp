@@ -7,6 +7,17 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+
+## How Install 
+You can install this from docker using sail or directly on your local web server (mamp, wamp, .. laragon).
+- rename .env.example file to .env and define your database parameters
+- create your database and run migration : php artisan make:migration
+- check all migration with command : php artisan migrate:status
+- you need define also your smtp parameters : follow just the example smtp config in .env.example
+- run following command : php artisan queue:work --tries=3
+
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
